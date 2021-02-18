@@ -18,7 +18,7 @@ WIDTH = 1000
 root = tk.Tk()
 root.geometry('350x300')
 def admin():
-    if user.get() == 'hamzaraza77094' and password.get() == 'Raza77094':
+    if user.get() == 'admin' and password.get() == 'admin123':
         conn = sqlite3.connect('login_info.db')
         c = conn.cursor()
         c.execute('SELECT *, oid FROM login')
